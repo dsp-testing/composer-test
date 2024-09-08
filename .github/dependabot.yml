@@ -1,0 +1,9 @@
+version: 2
+updates:
+  - package-ecosystem: composer
+    directory: /
+    schedule:
+      interval: weekly
+    ignore:
+      - dependency-name: monolog/monolog
+        versions: "> 3.7.0"
